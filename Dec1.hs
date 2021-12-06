@@ -1,4 +1,9 @@
+{-# LANGUAGE FlexibleInstances #-}
+{-# OPTIONS_GHC -Wno-orphans #-}
 import Common
+
+instance Input [Int] where
+    readInput = map read . words
 
 main :: IO ()
 main = both part1 part2

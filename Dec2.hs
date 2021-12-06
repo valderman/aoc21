@@ -1,6 +1,6 @@
 {-# LANGUAGE FlexibleInstances #-}
-import Data.List (foldl')
 import Common
+import Data.List (foldl')
 
 data Command = Forward Int | Up Int | Down Int
 
